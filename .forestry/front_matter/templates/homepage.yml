@@ -1,0 +1,94 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: default
+- name: show_next_event
+  label: Display Next DiasporaX Event
+  type: boolean
+  hidden: false
+  default: false
+  description: This toggle will allow you to show the date and details of the next
+    DiasporaX event.
+- type: datetime
+  name: next_event_date
+  label: Next DiasporaX Event Date
+  description: 'Select the Date for the next DiasporaX event in the calendar. Note:
+    The date will be displayed on the page as a string without the time and year (e.g.
+    July 27).'
+  config:
+    display_utc: false
+- name: next_event_venue
+  label: Next DiasporaX event venue
+  type: text
+  hidden: false
+  default: ''
+  description: Enter the name of the venue where the next DiasporaX event takes place.
+- name: next_event_guests
+  label: Next DiasporaX event guests
+  type: text
+  hidden: false
+  default: ''
+  description: Enter the name(s) of the guest speakers for the next DiasporaX event.
+- type: boolean
+  name: show_next_event_poster
+  label: Display the poster for next DiasporaX Event
+  description: This toggle will give you the option to display the poster for the
+    next DiasporaX event on the website.
+- name: next_event_poster
+  label: Next DiasporaX event poster
+  type: file
+  hidden: false
+  default: ''
+  description: Drag and Drop the poster for the next DiasporaX event.
+- name: next_event_poster_alt_text
+  label: Next DisaporaX Event Poster Alt text
+  type: text
+  hidden: false
+  default: ''
+  description: This text will not be displayed, however, it's great to have for accessibility
+    purposes.
+- name: show_upcoming_events
+  label: Show Future DiasporaX Events
+  type: boolean
+  hidden: false
+  default: false
+  description: This toggle will display upcoming DiasporaX events on the website.
+- name: upcoming_events
+  label: Upcoming DiasporaX Events
+  type: field_group_list
+  fields:
+  - type: datetime
+    name: upcoming_event_date
+    label: Date for Upcoming DiasporaX event
+    description: 'Select from the calendar below the date for the upcoming DiasporaX
+      event. Note: The date will be displayed on the page as a string without the
+      time and year (e.g. July 27).'
+  - name: upcoming_event_venue
+    label: Venue for Upcoming DiasporaX Event
+    type: text
+    hidden: false
+    default: ''
+    description: Enter the name of the venue for the upcoming DiasporaX event.
+  - name: upcoming_event_guest
+    label: Guest(s) for upcoming DiasporaX event
+    type: text
+    hidden: false
+    default: ''
+    description: Enter the name(s) of guest speakers for the upcoming DiasporaX event.
+  hidden: false
+  default: ''
+  description: Be able to list upcoming DiasporaX events on the website.
+- name: show_past_events
+  label: Show Past DiasporaX Events
+  type: boolean
+  hidden: false
+  default: false
+  description: This toggle will show a link on the website leading vistors to the
+    DiasporaX Medium profile, showcasing blog entries of past DiasporaX events.
+pages:
+- index.html
