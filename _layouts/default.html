@@ -29,7 +29,7 @@
           <nav class="navbar is-transparent">
             <div class="container">
               <div class="navbar-brand">
-                <div class="navbar-item">
+                <div class="navbar-item is-block-mobile margin-zero-auto-mobile">
                   <img src="./img/diasporaX-logo.svg" alt="Logo">
                 </div>
               </div>
@@ -40,8 +40,8 @@
           <div class="container">
             <div class="columns">
               <div class="column is-three-fifths-tablet is-half-desktop">
-                <h1 class="title is-size-1 is-uppercase has-text-weight-bold is-italic">Advance LatinX<span class="is-hidden-mobile">&nbsp;</span><span class="is-hidden-tablet"> </span>Culture</h1>
-                <p class="subtitle has-text-white is-size-3">DiasporaX brings LatinX artists together for group studio visits that seek advance cultural conversations beyond self-marginalizing clichés.</p>
+                <h1 class="title is-size-1 is-uppercase has-text-weight-bold is-italic has-text-centered-mobile">Advance LatinX<span class="is-hidden-mobile">&nbsp;</span><span class="is-hidden-tablet"> </span>Culture</h1>
+                <p class="subtitle has-text-white is-size-3 has-text-centered-mobile">DiasporaX brings LatinX artists together for group studio visits that seek advance cultural conversations beyond self-marginalizing clichés.</p>
                 {% if page.show_next_event %}
                   <div class="columns is-vcentered">
                     <div class="column is-narrow has-text-centered-mobile">
@@ -58,7 +58,7 @@
         </div>
       </section>
 
-      <section id="events" class="section has-background-white has-text-black">
+      <section id="events" class="section has-background-white has-text-black has-text-centered-mobile">
         <div class="container">
           <div class="columns">
             <div class="column is-half">
@@ -87,7 +87,7 @@
               <h3 class="is-uppercase has-text-weight-bold is-italic is-size-3">Upcoming Events</h3>
               <div class="content">
                 {% if page.show_upcoming_events %}
-                  <ul>
+                  <ul class="is-inline-block-mobile">
                     {% for item in page.upcoming_events %}
                     <li>
                       <h4 class="has-text-weight-bold is-size-5">{{ item.upcoming_event_date | date: "%B %-d" }} {% if item.upcoming_event_venue %}at {{ item.upcoming_event_venue }}{% else %}- Location TBD{% endif %}</h4>
@@ -149,7 +149,7 @@
                   <div class="mc-field-group field">
                     <label for="mce-FNAME" class="label is-large is-uppercase has-text-weight-bold is-italic">Full Name</label>
                     <div class="control">
-                      <input type="text" name="FNAME" class="input is-large is-radiusless tk-acumin-pro-condensed" id="mce-FNAME" placeholder="e.g. Jane Doe">
+                      <input type="text" name="FNAME" class="input is-large is-radiusless tk-acumin-pro-condensed" id="mce-FNAME" placeholder="e.g. Juan Preciado">
                     </div>
                   </div>
                 </div>

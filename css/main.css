@@ -151,24 +151,8 @@ a.has-text-white:hover {
   color: var(--secondary) !important;
 }
 
-.navbar-menu.is-active {
-  position: absolute;
-  width: 100%;
-}
-
-a.navbar-item {
-  color: white;
-  text-decoration: underline;
-}
-
-a.navbar-item:hover {
-  background: transparent;
-  text-decoration: none;
-  color: var(--dark);
-}
-
-.is-active a.navbar-item {
-  color: var(--dark);
+.navbar-brand .navbar-item {
+  padding-top: 1.5rem;
 }
 
 .about-latinx {
@@ -276,6 +260,12 @@ input[type="email"]:valid ~ .icon.is-right svg {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .margin-zero-auto-mobile {
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   p.is-uppercase.has-text-weight-bold.is-size-2 {
     max-width: 332px;
@@ -285,19 +275,6 @@ input[type="email"]:valid ~ .icon.is-right svg {
     height: 163px;
   }
 }
-
-@media only screen and (max-width: 1087px) {
-  .navbar-item img {
-    max-height: 2.25rem;
-  }
-}
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
