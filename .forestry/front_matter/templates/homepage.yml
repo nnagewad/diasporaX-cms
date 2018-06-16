@@ -90,5 +90,3 @@ fields:
   default: false
   description: This toggle will show a link on the website leading vistors to the
     DiasporaX Medium profile, showcasing blog entries of past DiasporaX events.
-pages:
-- index.html
