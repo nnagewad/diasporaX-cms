@@ -151,7 +151,7 @@ a.has-text-white:hover {
   color: var(--secondary) !important;
 }
 
-.navbar-brand .navbar-item {
+.navbar-brand.navbar-item {
   padding-top: 1.5rem;
 }
 
@@ -273,6 +273,12 @@ input[type="email"]:valid ~ .icon.is-right svg {
 
   .form-submit-message {
     height: 163px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1087px) {
+  .navbar-brand.navbar-item {
+    padding-left: 1.5rem;
   }
 }
 
