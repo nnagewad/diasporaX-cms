@@ -227,23 +227,31 @@ input[type="email"]:valid ~ .icon.is-right svg {
   padding-bottom: 3rem;
 }
 
-.footer .column.is-narrow a:hover {
+.columns.is-mobile.is-centered svg {
+  fill: var(--dark);
+}
+
+.columns.is-mobile.is-centered a:hover svg {
   fill: var(--secondary);
 }
 
-.footer .ccfa-logo {
-  padding-top: calc(2rem - .75rem);
-  padding-bottom: calc(2rem - .75rem);
-}
-
-.email-link {
+.footer a {
   text-decoration: underline;
   color: var(--dark);
 }
 
-.email-link:hover {
-  text-decoration: none;
+.footer a:hover {
   color: var(--secondary);
+  text-decoration: none;
+}
+
+p.is-inline-block {
+  margin-left: .5rem;
+}
+
+.columns:not(:last-child),
+.has-text-centered.footer-content {
+  margin-bottom: calc(2rem - .75rem) !important;
 }
 
 @media all and (-webkit-min-device-pixel-ratio : 1.5),
