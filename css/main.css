@@ -119,7 +119,7 @@ body {
   max-height: 4.75rem;
 }
 
-.hero {
+.background-image {
   background: linear-gradient(45deg, rgba(77,171,238,0.80), rgba(250,58,230,0.80), rgba(255,251,78,0.80)), url('../img/diasporax-hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -258,7 +258,7 @@ p.is-inline-block {
        all and (-o-min-device-pixel-ratio: 3/2),
        all and (min--moz-device-pixel-ratio: 1.5),
        all and (min-device-pixel-ratio: 1.5) {
-  .hero {
+  .background-image {
     background: linear-gradient(45deg, rgba(77,171,238,0.80), rgba(250,58,230,0.80), rgba(255,251,78,0.80)), url('../img/diasporax-hero@2x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
