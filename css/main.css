@@ -115,6 +115,23 @@ body {
   font-family: "acumin-pro-condensed",sans-serif !important;
 }
 
+.margin-zero-auto {
+  margin: 0 auto;
+}
+
+.hero.is-dark a.navbar-item:hover {
+  background-color: transparent;
+}
+
+.hero.is-dark a.navbar-item svg {
+  fill: #FFFFFF;
+  max-height: 2.5rem;
+}
+
+.hero.is-dark a.navbar-item:hover svg {
+  fill: var(--secondary);
+}
+
 .navbar-item img {
   max-height: 4.75rem;
 }
@@ -151,7 +168,8 @@ a.has-text-white:hover {
   color: var(--secondary) !important;
 }
 
-.navbar-brand.navbar-item {
+.navbar-brand.navbar-item,
+a.navbar-item {
   padding-top: 1.5rem;
 }
 
@@ -235,11 +253,13 @@ input[type="email"]:valid ~ .icon.is-right svg {
   fill: var(--secondary);
 }
 
+.content a,
 .footer a {
   text-decoration: underline;
   color: var(--dark);
 }
 
+.content a:hover,
 .footer a:hover {
   color: var(--secondary);
   text-decoration: none;
@@ -285,7 +305,8 @@ p.is-inline-block {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1087px) {
-  .navbar-brand.navbar-item {
+  .navbar-brand.navbar-item,
+  a.navbar-item {
     padding-left: 1.5rem;
   }
 }
